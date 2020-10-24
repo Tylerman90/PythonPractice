@@ -83,8 +83,27 @@ miles_per_hour = float(input())
 minutes_traveled = float(input())
 
 print('Miles: {:f}'.format(mph_and_minutes_to_miles(miles_per_hour, minutes_traveled)))
-      
-      
+            
+#-------------------
+def print_popcorn_time(bag_ounces):
+    if bag_ounces < 3:
+        print('Too small')
+    elif bag_ounces > 10:
+        print('Too large')
+    else:
+        print('{} seconds'.format(6 * bag_ounces))
+        
+#-------------------
+def shampoo_instructions(num_cycles):
+    if num_cycles < 1:
+        print('Too few.')
+    elif num_cycles > 4:
+        print('Too many.')
+    else:
+        for num in range(num_cycles):
+        print('{}: Lather and rinse.'.format(num))
+        if num == num_cycles:
+            print('Done.')
       
       
       
